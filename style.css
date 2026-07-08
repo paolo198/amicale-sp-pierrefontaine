@@ -151,16 +151,16 @@ body {
 .hero-media {
   position: absolute;
   inset: 0;
-  /* Remplacer par : background-image: url('assets/hero.jpg'); background-size: cover; background-position: center; */
-  background:
-    radial-gradient(circle at 30% 20%, rgba(163, 45, 45, 0.35), transparent 55%),
-    linear-gradient(160deg, #241A15 0%, #14100D 60%, #0C0A08 100%);
+  background-image: url('assets/hero-1.jpg');
+  background-size: cover;
+  background-position: center;
+  /* Quand une 2e photo arrive : on transforme ceci en pile de calques et un fondu JS entre eux */
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(12, 10, 8, 0.15) 0%, rgba(12, 10, 8, 0.55) 75%, rgba(12, 10, 8, 0.8) 100%);
+  background: linear-gradient(180deg, rgba(12, 10, 8, 0.45) 0%, rgba(12, 10, 8, 0.4) 45%, rgba(12, 10, 8, 0.7) 85%, rgba(12, 10, 8, 0.85) 100%);
 }
 
 .hero-content {
@@ -204,6 +204,22 @@ body {
   height: 40px;
   background: linear-gradient(180deg, rgba(243,238,228,0.6), transparent);
   z-index: 2;
+}
+
+.page-header {
+  padding: 140px 24px 48px;
+  text-align: center;
+  background: linear-gradient(160deg, #241A15 0%, #14100D 100%);
+}
+
+.page-header .eyebrow { color: rgba(243, 238, 228, 0.7); }
+
+.page-header h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--cream);
+  font-size: clamp(30px, 5vw, 42px);
+  margin: 10px 0 0;
 }
 
 /* ---------- Sections ---------- */

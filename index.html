@@ -18,10 +18,10 @@
     <span class="brand-text">SP Pierrefontaine-les-Varans</span>
   </a>
   <div class="nav-links">
-    <a href="#presentation">L'amicale</a>
-    <a href="#actus">Actus</a>
-    <a href="#evenements">Événements</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html#presentation">L'amicale</a>
+    <a href="actus.html">Actus</a>
+    <a href="evenements.html">Événements</a>
+    <a href="contact.html">Contact</a>
   </div>
   <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -29,10 +29,10 @@
 </nav>
 
 <div class="mobile-menu" id="mobile-menu">
-  <a href="#presentation">L'amicale</a>
-  <a href="#actus">Actus</a>
-  <a href="#evenements">Événements</a>
-  <a href="#contact">Contact</a>
+  <a href="index.html#presentation">L'amicale</a>
+  <a href="actus.html">Actus</a>
+  <a href="evenements.html">Événements</a>
+  <a href="contact.html">Contact</a>
 </div>
 
 <header class="hero">
@@ -62,54 +62,15 @@
   <section id="actus" class="section">
     <p class="section-eyebrow">02 — Actus</p>
     <h2>Ce qui se passe à la caserne</h2>
-    <div class="feed" id="actus-list">
-      <!-- Ces cartes seront à terme générées depuis Supabase -->
-      <article class="feed-item">
-        <div class="feed-date"><span class="d">03</span><span class="m">juil</span></div>
-        <div class="feed-body">
-          <h3>Nouvelle recrue au sein de la caserne</h3>
-          <p>L'équipe s'agrandit avec l'arrivée d'un nouveau jeune sapeur-pompier volontaire.</p>
-        </div>
-      </article>
-      <article class="feed-item">
-        <div class="feed-date"><span class="d">21</span><span class="m">juin</span></div>
-        <div class="feed-body">
-          <h3>Exercice de manoeuvre annuel</h3>
-          <p>Retour en images sur l'exercice organisé avec les casernes voisines.</p>
-        </div>
-      </article>
-    </div>
+    <p class="section-text">Retrouve toutes les actualités de la caserne.</p>
+    <a class="cta" href="actus.html">Voir les actus</a>
   </section>
 
   <section id="evenements" class="section">
     <p class="section-eyebrow">03 — Événements</p>
     <h2>À venir</h2>
-    <div class="events" id="events-list">
-      <!-- Ces lignes seront à terme générées depuis Supabase -->
-      <div class="event-row">
-        <div>
-          <h3>Repas annuel de l'amicale</h3>
-          <p>Salle des fêtes, Pierrefontaine-les-Varans</p>
-        </div>
-        <span class="event-date">14 sept.</span>
-      </div>
-      <div class="event-row">
-        <div>
-          <h3>Sainte-Barbe</h3>
-          <p>Caserne de Pierrefontaine-les-Varans</p>
-        </div>
-        <span class="event-date">6 déc.</span>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section contact-section">
-    <p class="section-eyebrow">04 — Contact</p>
-    <h2>Nous contacter</h2>
-    <p class="section-text">
-      Une question, une envie de rejoindre l'amicale, ou un message pour la caserne ? Écrivez-nous.
-    </p>
-    <a class="cta" href="mailto:contact@exemple.fr">Envoyer un message</a>
+    <p class="section-text">Les prochains rendez-vous de l'amicale.</p>
+    <a class="cta" href="evenements.html">Voir les événements</a>
   </section>
 
 </main>
@@ -118,23 +79,6 @@
   <p>Amicale des sapeurs-pompiers de Pierrefontaine-les-Varans</p>
 </footer>
 
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
-
-  menuToggle.addEventListener('click', () => {
-    const isOpen = mobileMenu.classList.toggle('open');
-    menuToggle.classList.toggle('open', isOpen);
-    menuToggle.setAttribute('aria-expanded', isOpen);
-  });
-
-  mobileMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-      menuToggle.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-    });
-  });
-</script>
+<script src="nav.js"></script>
 </body>
 </html>

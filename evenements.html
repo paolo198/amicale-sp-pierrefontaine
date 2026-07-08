@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Événements — Amicale des sapeurs-pompiers de Pierrefontaine-les-Varans</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="glass-nav">
+  <a href="index.html" class="brand">
+    <span class="brand-mark"></span>
+    <span class="brand-text">SP Pierrefontaine-les-Varans</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html#presentation">L'amicale</a>
+    <a href="actus.html">Actus</a>
+    <a href="evenements.html">Événements</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html#presentation">L'amicale</a>
+  <a href="actus.html">Actus</a>
+  <a href="evenements.html">Événements</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<header class="page-header">
+  <p class="eyebrow">Amicale des sapeurs-pompiers</p>
+  <h1>Événements</h1>
+</header>
+
+<main>
+  <section class="section">
+    <div class="events" id="events-list">
+      <!-- Ces lignes seront à terme générées depuis Supabase -->
+      <div class="event-row">
+        <div>
+          <h3>Repas annuel de l'amicale</h3>
+          <p>Salle des fêtes, Pierrefontaine-les-Varans</p>
+        </div>
+        <span class="event-date">14 sept.</span>
+      </div>
+      <div class="event-row">
+        <div>
+          <h3>Sainte-Barbe</h3>
+          <p>Caserne de Pierrefontaine-les-Varans</p>
+        </div>
+        <span class="event-date">6 déc.</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Amicale des sapeurs-pompiers de Pierrefontaine-les-Varans</p>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>

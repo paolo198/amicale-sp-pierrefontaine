@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Actus — Amicale des sapeurs-pompiers de Pierrefontaine-les-Varans</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="glass-nav">
+  <a href="index.html" class="brand">
+    <span class="brand-mark"></span>
+    <span class="brand-text">SP Pierrefontaine-les-Varans</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html#presentation">L'amicale</a>
+    <a href="actus.html">Actus</a>
+    <a href="evenements.html">Événements</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html#presentation">L'amicale</a>
+  <a href="actus.html">Actus</a>
+  <a href="evenements.html">Événements</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<header class="page-header">
+  <p class="eyebrow">Amicale des sapeurs-pompiers</p>
+  <h1>Actus</h1>
+</header>
+
+<main>
+  <section class="section">
+    <div class="feed" id="actus-list">
+      <!-- Ces cartes seront à terme générées depuis Supabase -->
+      <article class="feed-item">
+        <div class="feed-date"><span class="d">03</span><span class="m">juil</span></div>
+        <div class="feed-body">
+          <h3>Nouvelle recrue au sein de la caserne</h3>
+          <p>L'équipe s'agrandit avec l'arrivée d'un nouveau jeune sapeur-pompier volontaire.</p>
+        </div>
+      </article>
+      <article class="feed-item">
+        <div class="feed-date"><span class="d">21</span><span class="m">juin</span></div>
+        <div class="feed-body">
+          <h3>Exercice de manoeuvre annuel</h3>
+          <p>Retour en images sur l'exercice organisé avec les casernes voisines.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Amicale des sapeurs-pompiers de Pierrefontaine-les-Varans</p>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
