@@ -23,7 +23,17 @@
     <a href="#evenements">Événements</a>
     <a href="#contact">Contact</a>
   </div>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#presentation">L'amicale</a>
+  <a href="#actus">Actus</a>
+  <a href="#evenements">Événements</a>
+  <a href="#contact">Contact</a>
+</div>
 
 <header class="hero">
   <!-- Remplacer assets/hero.jpg par une photo réelle et de bonne qualité (caserne, camion, équipe) -->
@@ -108,5 +118,23 @@
   <p>Amicale des sapeurs-pompiers de Pierrefontaine-les-Varans</p>
 </footer>
 
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    menuToggle.classList.toggle('open', isOpen);
+    menuToggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      menuToggle.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
 </body>
 </html>
