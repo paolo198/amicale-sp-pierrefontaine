@@ -83,6 +83,40 @@ body {
 
 .nav-links a:hover { color: var(--cream); }
 
+.nav-social {
+  display: flex;
+  align-items: center;
+  color: rgba(243, 238, 228, 0.85);
+  transition: color 0.2s ease;
+}
+
+.nav-social:hover { color: var(--cream); }
+
+.nav-social-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 4px;
+}
+
+.nav-social svg { width: 18px; height: 18px; }
+
+.mobile-menu .nav-social svg { width: 26px; height: 26px; }
+.mobile-menu .nav-social-group { gap: 20px; margin-left: 0; }
+
+.nav-social {
+  display: flex;
+  align-items: center;
+  color: rgba(243, 238, 228, 0.85);
+  transition: color 0.2s ease;
+}
+
+.nav-social:hover { color: var(--cream); }
+
+.nav-social svg { width: 18px; height: 18px; }
+
+.mobile-menu .nav-social svg { width: 26px; height: 26px; }
+
 .menu-toggle {
   display: none;
   flex-direction: column;
