@@ -46,22 +46,30 @@
       <button class="cta-outline" id="logout-btn" style="cursor:pointer;">Se déconnecter</button>
     </div>
 
-    <h3>Ajouter une actu</h3>
+    <h3 id="actu-form-title">Ajouter une actu</h3>
     <form id="actu-form" class="admin-form">
+      <input type="hidden" id="actu-edit-id" value="">
       <label>Titre<input type="text" id="actu-titre" required></label>
       <label>Date<input type="date" id="actu-date" required></label>
       <label>Contenu<textarea id="actu-contenu" rows="4" required></textarea></label>
-      <button type="submit" class="cta">Publier l'actu</button>
+      <div style="display:flex; gap:12px;">
+        <button type="submit" class="cta" id="actu-submit-btn">Publier l'actu</button>
+        <button type="button" class="cta-outline" id="actu-cancel-edit" style="display:none; cursor:pointer;">Annuler</button>
+      </div>
     </form>
     <div id="actus-admin-list" class="admin-list"></div>
 
-    <h3 style="margin-top:48px;">Ajouter un événement</h3>
+    <h3 style="margin-top:48px;" id="event-form-title">Ajouter un événement</h3>
     <form id="event-form" class="admin-form">
+      <input type="hidden" id="event-edit-id" value="">
       <label>Titre<input type="text" id="event-titre" required></label>
       <label>Date<input type="date" id="event-date" required></label>
       <label>Lieu<input type="text" id="event-lieu" required></label>
       <label>Description (optionnel)<textarea id="event-description" rows="3"></textarea></label>
-      <button type="submit" class="cta">Publier l'événement</button>
+      <div style="display:flex; gap:12px;">
+        <button type="submit" class="cta" id="event-submit-btn">Publier l'événement</button>
+        <button type="button" class="cta-outline" id="event-cancel-edit" style="display:none; cursor:pointer;">Annuler</button>
+      </div>
     </form>
     <div id="events-admin-list" class="admin-list"></div>
   </section>
