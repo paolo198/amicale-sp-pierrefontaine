@@ -807,6 +807,28 @@ body {
   text-decoration: none;
 }
 
+.bottom-link-section {
+  text-align: center;
+  padding: 56px 24px;
+}
+
+.bottom-link {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.bottom-link:hover {
+  background: var(--cream);
+  border-color: var(--red);
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {
