@@ -52,30 +52,28 @@
 <main>
   <section class="section">
     <div class="events" id="events-list">
-      <!-- Ces lignes seront à terme générées depuis Supabase -->
-      <div class="event-row">
-        <div>
-          <h3>Repas annuel de l'amicale</h3>
-          <p>Salle des fêtes, Pierrefontaine-les-Varans</p>
-        </div>
-        <span class="event-date">14 sept.</span>
-      </div>
-      <div class="event-row">
-        <div>
-          <h3>Sainte-Barbe</h3>
-          <p>Caserne de Pierrefontaine-les-Varans</p>
-        </div>
-        <span class="event-date">6 déc.</span>
-      </div>
+      <p class="section-text">Chargement des événements…</p>
     </div>
   </section>
 </main>
+
+<div class="modal-overlay" id="event-modal">
+  <div class="modal-box">
+    <button class="modal-close" id="event-modal-close">×</button>
+    <p class="modal-eyebrow" id="event-modal-date"></p>
+    <h2 id="event-modal-title"></h2>
+    <p class="modal-content-text" id="event-modal-content"></p>
+  </div>
+</div>
 
 <footer class="site-footer">
   <p>Amicale des sapeurs-pompiers de Pierrefontaine-les-Varans</p>
   <p class="footer-links"><a href="politique-de-confidentialite.html">Politique de confidentialité</a> · <a href="conditions-utilisation.html">Conditions d'utilisation</a></p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-client.js"></script>
 <script src="nav.js"></script>
+<script src="evenements.js"></script>
 </body>
 </html>

@@ -52,30 +52,28 @@
 <main>
   <section class="section">
     <div class="feed" id="actus-list">
-      <!-- Ces cartes seront à terme générées depuis Supabase -->
-      <article class="feed-item">
-        <div class="feed-date"><span class="d">03</span><span class="m">juil</span></div>
-        <div class="feed-body">
-          <h3>Nouvelle recrue au sein de la caserne</h3>
-          <p>L'équipe s'agrandit avec l'arrivée d'un nouveau jeune sapeur-pompier volontaire.</p>
-        </div>
-      </article>
-      <article class="feed-item">
-        <div class="feed-date"><span class="d">21</span><span class="m">juin</span></div>
-        <div class="feed-body">
-          <h3>Exercice de manoeuvre annuel</h3>
-          <p>Retour en images sur l'exercice organisé avec les casernes voisines.</p>
-        </div>
-      </article>
+      <p class="section-text">Chargement des actus…</p>
     </div>
   </section>
 </main>
+
+<div class="modal-overlay" id="actu-modal">
+  <div class="modal-box">
+    <button class="modal-close" id="actu-modal-close">×</button>
+    <p class="modal-eyebrow" id="actu-modal-date"></p>
+    <h2 id="actu-modal-title"></h2>
+    <p class="modal-content-text" id="actu-modal-content"></p>
+  </div>
+</div>
 
 <footer class="site-footer">
   <p>Amicale des sapeurs-pompiers de Pierrefontaine-les-Varans</p>
   <p class="footer-links"><a href="politique-de-confidentialite.html">Politique de confidentialité</a> · <a href="conditions-utilisation.html">Conditions d'utilisation</a></p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-client.js"></script>
 <script src="nav.js"></script>
+<script src="actus.js"></script>
 </body>
 </html>
