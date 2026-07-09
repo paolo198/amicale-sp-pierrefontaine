@@ -8,12 +8,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — Amicale des sapeurs-pompiers de Pierrefontaine-les-Varans">
+<meta property="og:description" content="Amicale des sapeurs-pompiers de Pierrefontaine-les-Varans : actus, evenements et vie associative de la caserne.">
+<meta property="og:image" content="assets/og-image.jpg">
 </head>
 <body>
 
 <nav class="glass-nav">
   <a href="index.html" class="brand">
-    <span class="brand-mark"></span>
+    <img src="assets/logo.png" alt="Logo de l'amicale" class="brand-logo">
     <span class="brand-text">SP Pierrefontaine-les-Varans</span>
   </a>
   <div class="nav-links">
@@ -46,19 +51,47 @@
 
 <main>
   <section class="section contact-section">
-    <div class="contact-card">
-      <div class="contact-icon">@</div>
-      <p class="section-text" style="margin: 0 auto;">
-        Une question, une envie de rejoindre l'amicale, ou un message pour la caserne ? Écrivez-nous.
-      </p>
-      <a class="cta" href="mailto:contact@exemple.fr">Envoyer un message</a>
-      <p class="contact-phone">ou par téléphone : (à venir)</p>
+    <p class="section-eyebrow">On vous répond</p>
+    <h2>Une question, une envie de nous rejoindre ou de nous soutenir ?</h2>
+    <p class="section-text" style="margin-bottom: 40px;">
+      La caserne et l'amicale sont toujours contentes d'échanger avec les habitants du secteur.
+      Écrivez-nous, on revient vers vous rapidement.
+    </p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon">@</div>
+        <h3>Contact</h3>
+        <p class="section-text" style="margin: 0 auto;">
+          Une question, une envie de rejoindre l'amicale, ou un message pour la caserne ? Écrivez-nous.
+        </p>
+        <div class="card-actions">
+          <a class="cta" href="mailto:contact@exemple.fr">Envoyer un message</a>
+          <p class="contact-phone">ou par téléphone : (à venir)</p>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon">♥</div>
+        <h3>Faire un don</h3>
+        <p class="section-text" style="margin: 0 auto;">
+          Vos dons aident l'amicale à financer le matériel et les événements de la caserne.
+        </p>
+        <ul class="conditions-list" style="text-align: left; margin: 16px 0 0;">
+          <li>Par chèque, à l'ordre de l'Amicale des sapeurs-pompiers de Pierrefontaine-les-Varans</li>
+          <li>En espèces, directement à la caserne</li>
+        </ul>
+        <div class="card-actions">
+          <button class="cta cta-outline" disabled title="Bientôt disponible">Faire un don en ligne (bientôt disponible)</button>
+          <a class="cta" href="mailto:contact@exemple.fr">Nous contacter</a>
+        </div>
+      </div>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
   <p>Amicale des sapeurs-pompiers de Pierrefontaine-les-Varans</p>
+  <p class="footer-links"><a href="politique-de-confidentialite.html">Politique de confidentialité</a> · <a href="conditions-utilisation.html">Conditions d'utilisation</a></p>
 </footer>
 
 <script src="nav.js"></script>
